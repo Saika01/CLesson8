@@ -13,7 +13,9 @@ Console.WriteLine("Введите конец диапазона случайно
 int endValue = Convert.ToInt32(Console.ReadLine());
 
 int[,] array = CreateMatrix(row, col, startValue, endValue);
-PrintMatrix(array);Console.WriteLine();
+PrintMatrix(array);
+
+Console.WriteLine();
 
 int[] newArr = MatrixToArray(array);
 Array.Sort(newArr);
